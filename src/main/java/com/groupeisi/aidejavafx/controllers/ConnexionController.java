@@ -1,5 +1,7 @@
 package com.groupeisi.aidejavafx.controllers;
 
+import com.groupeisi.aidejavafx.entities.Personne;
+import com.groupeisi.aidejavafx.entities.Utilisateur;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
@@ -11,11 +13,12 @@ public class ConnexionController {
     private TextField email_tf;
     @FXML
     private PasswordField password_tf;
+
     @FXML
     private Button connecter_btn;
 
     public void initialize() {
-        System.out.println("Demarrage de l'interface");
+        Utilisateur utilisateur = new Utilisateur();
     }
 
     public void Envoyer(MouseEvent mouseEvent) {
